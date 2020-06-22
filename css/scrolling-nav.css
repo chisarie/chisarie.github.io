@@ -4,9 +4,231 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 header {
-  padding: 156px 0 100px;
+  padding: 150px 0 54px;
+  background-color: white;
+  background-position: top;
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    padding: 100px 0 54px;
+  }
 }
 
 section {
-  padding: 150px 0;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.card-text {
+  font-weight: 300;
+}
+
+.card-update {
+  color: MediumSeaGreen;
+}
+
+.card-header {
+  color: gray;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: blue;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: blue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: blue;
+}
+
+.img-round  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 30%;
+  border: 5px solid white;
+  box-shadow: 0px 0px 20px black;
+}
+
+@media screen and (max-width: 770px) {
+  .img-round {
+    width: 50%;
+  }
+}
+
+.img-container {
+  padding-bottom: 30px;
+}
+
+.bg-img {
+  background-image: url("../img/bulbs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: top;
+}
+
+.img-credit {
+  bottom: 0;
+  color: white;
+  text-align: right;
+  font-size: 0.75rem;
+  padding-right: 10px;
+}
+
+.title-name {
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Muli', sans-serif;*/
+  font-size: 4.0rem;
+  color: white;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 13px black;
+}
+
+.title-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.fa {
+  margin: 20px;
+  padding: 15px;
+  font-size: 25px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.ai {
+  margin: 20px;
+  padding: 15px;
+  font-size: 25px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  color: white;
+}
+
+/* Set a specific color for each brand */
+
+.ai-google-scholar {
+  background: white;
+  box-shadow: 0px 0px 6px black;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  box-shadow: 0px 0px 6px black;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  box-shadow: 0px 0px 6px black;
+}
+/* LinkedIn */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  box-shadow: 0px 0px 6px black;
+}
+
+/* Email */
+.fa-envelope {
+  color: black;
+  background: white;
+  box-shadow: 0px 0px 6px black;
+}
+.fa-envelope:hover {
+  color: black;
+}
+
+/* github */
+.fa-github {
+  color: white;
+  background: #a9aba9;
+  box-shadow: 0px 0px 6px black;
+}
+
+.resume {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+li{
+  margin: 20px 0;
+}
+
+/* pdf */
+.fa-file-pdf-o {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  width: 30px;
+  text-align: left;
+}
+
+.project-container {
+  margin-top: 20px;
+}
+
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.img-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+}
+
+.img-column img {
+  margin-top: 8px;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .img-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .img-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
