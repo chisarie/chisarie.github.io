@@ -232,3 +232,8 @@ li{
     max-width: 100%;
   }
 }
+
+.marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
