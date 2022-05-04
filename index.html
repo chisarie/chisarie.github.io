@@ -70,8 +70,9 @@
         <img src="img/amz_cropped.jpg" class="img-round" />
       </div>
       <h1 class="title-name">EUGENIO CHISARI</h1>
-      <p class="title-description">Robotics &nbsp; | &nbsp; Autonomous Vehicles &nbsp; | &nbsp; Machine Learning &nbsp;
-        | &nbsp; Reinforcement Learning</p>
+      <p class="title-description">Robotics &nbsp; | &nbsp; Autonomous Vehicles &nbsp; | &nbsp; Mobile Manipulation
+        &nbsp;
+        | &nbsp; Imitation Learning</p>
       <a href="mailto:eugenio.chisari@gmail.com" target="_blank" class="fa fa-envelope"></a>
       <a href="https://twitter.com/ChisariEugenio" target="_blank" class="fa fa-twitter"></a>
       <a href="https://scholar.google.com/citations?user=cKvbzWsAAAAJ&hl=it" target="_blank"
@@ -87,14 +88,14 @@
           <h2>About</h2>
           <p class="lead">
             Hi there, this is Eugenio! I am a PhD candidate at the University of Freiburg
-            under the supervision of Abhinav Valada and Wolfram Burgard. My research is
+            under the supervision of Prof. Abhinav Valada and Wolfram Burgard. My research is
             focused on Robot Learning, in particular Imitation and Reinforcement Learning
             for mobile manipulation. In the past I contributed to different ambitious
             research and engineering projects and gathered firsthand experience in
             classical and optimal control systems and motion planning.
             In particular, I worked as Trajectory and Vehicle Dynamics Control Engineer
             at <a href="http://driverless.amzracing.ch/" target=_blank>AMZ Driverless</a>, ETH's
-            unbeaten Formula Student Driverless team, and interned at
+            Formula Student Driverless team, and interned at
             <a href="https://www.anybotics.com/" target=_blank>ANYbotics AG</a> as
             Robotics Software Engineer in the autonomous navigation team.
             I was also for two years in a row Teaching Assistant at ETH's
@@ -115,6 +116,62 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Selected Projects</h2>
+
+          <!-- CEILing paper -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Manipulation &nbsp; | &nbsp; Learning from Human Feedback &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Interactive Learning for Robotic Manipulation</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Robot Learning Lab, University of Freiburg</h6>
+                <p class="card-text">
+                  Learning to solve complex manipulation tasks from visual observations is a dominant challenge for
+                  real-world robot learning. Deep reinforcement learning algorithms have recently demonstrated
+                  impressive results, although they still require an impractical amount of time-consuming
+                  trial-and-error iterations. In this work, we consider the promising alternative paradigm of
+                  interactive learning where a human teacher provides feedback to the policy during execution, as
+                  opposed to imitation learning where a pre-collected dataset of perfect demonstrations is used. Our
+                  proposed CEILing (Corrective and Evaluative Interactive Learning) framework combines both corrective
+                  and evaluative feedback from the teacher to train a stochastic policy in an asynchronous manner, and
+                  employs a dedicated mechanism to trade off human corrections with the robot’s own experience. We
+                  present results obtained with our framework in extensive simulation and real-world experiments that
+                  demonstrate that CEILing can effectively solve complex robot manipulation tasks directly from raw
+                  images in less than one hour of real-world training.
+                </p>
+                <!-- Youtube Video -->
+                <p class="card-text">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/jodKpk01HDE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+                <!-- Short Video -->
+                <!-- <div id="carousel-4" class="carousel slide" data-ride="carousel">
+                  <video width="75%" class="marginauto" controls>
+                    <source src="img/project-orca/online_cut.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> 
+                </div> -->
+                <!-- Image Carousel -->
+                <div id="carousel-2" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/project-ceiling/feedback.png" alt="CEILing feedback types">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://arxiv.org/pdf/2110.03316.pdf" target="_blank" class="btn btn-primary"><i
+                    class="fa fa-file-pdf-o"></i>RA-L 2022 paper</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
           <!-- 
           <!~~ Jax Agents ~~>
           <div class="project-container">
@@ -365,7 +422,8 @@
             <li>
               <b>E. Chisari</b>, Tim Welschehold, Joschka Boedecker, Wolfram Burgard, Abhinav Valada <a
                 href="http://ceiling.cs.uni-freiburg.de/" target="_blank">
-                "Correct Me if I am Wrong: Interactive Learning for Robotic Manipulation"</a> in <i>IEEE Robotics and Automation Letters (RA-L)</i>,
+                "Correct Me if I am Wrong: Interactive Learning for Robotic Manipulation"</a> in <i>IEEE Robotics and
+                Automation Letters (RA-L)</i>,
               2022
             </li>
             <li>J. Kabzan, M. Valls, V. Reijgwart,
