@@ -70,12 +70,10 @@
         <img src="img/amz_cropped.jpg" class="img-round" />
       </div>
       <h1 class="title-name">EUGENIO CHISARI</h1>
-      <p class="title-description">Robotics &nbsp; | &nbsp; Autonomous Vehicles &nbsp; | &nbsp; Mobile Manipulation
-        &nbsp;
-        | &nbsp; Imitation Learning</p>
+      <p class="title-description">Robotics &nbsp; | &nbsp; Mobile Manipulation &nbsp; | &nbsp; Imitation Learning &nbsp; | &nbsp; Autonomous Vehicles &nbsp;</p>
       <a href="mailto:eugenio.chisari@gmail.com" target="_blank" class="fa fa-envelope"></a>
       <a href="https://twitter.com/ChisariEugenio" target="_blank" class="fa fa-twitter"></a>
-      <a href="https://scholar.google.com/citations?user=cKvbzWsAAAAJ&hl=it" target="_blank"
+      <a href="https://scholar.google.com/citations?user=cKvbzWsAAAAJ" target="_blank"
         class="ai ai-google-scholar ai-2x"></a>
       <a href="https://www.linkedin.com/in/eugeniochisari" target="_blank" class="fa fa-linkedin"></a>
       <a href="https://github.com/chisarie" target="_blank" class="fa fa-github"></a>
@@ -98,9 +96,9 @@
             Formula Student Driverless team, and interned at
             <a href="https://www.anybotics.com/" target=_blank>ANYbotics AG</a> as
             Robotics Software Engineer in the autonomous navigation team.
-            I was also for two years in a row Teaching Assistant at ETH's
-            <a href="https://idsc.ethz.ch/" target=_blank>Institute for Dynamic Systems and Control</a>
-            under Prof. Emilio Frazzoli for the lectures Control Systems I & II.
+            I am also interested in the world of startups and product. In summer 2023, 
+            I had the fortune to work at 
+            <a href="https://www.google.com/about/careers/applications/programs/apm/" target=_blank>Google as APM intern</a>.
           </p>
           <div class="resume">
             <a href="pdf/CV_Eugenio_Chisari.pdf" target="_blank" class="btn btn-primary"><i
@@ -116,6 +114,122 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Selected Projects</h2>
+
+          <!-- PointFlowMatch paper -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Manipulation &nbsp; | &nbsp; Imitation Learning &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Learning Robotic Manipulation Policies from Point Clouds with Conditional Flow Matching</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Robot Learning Lab, University of Freiburg</h6>
+                <p class="card-text">
+                  Learning from expert demonstrations is a promising approach for training robotic 
+                  manipulation policies from limited data. However, imitation learning algorithms 
+                  require a number of design choices ranging from the input modality, training 
+                  objective, and 6-DoF end-effector pose representation. Diffusion- based methods 
+                  have gained popularity as they enable predicting long-horizon trajectories and 
+                  handle multimodal action distributions. Recently, Conditional Flow Matching (CFM) (or Rectified Flow) 
+                  has been proposed as a more flexible generalization of diffusion models. 
+                  In this paper, we investigate the application of CFM in the context of robotic 
+                  policy learning and specifically study the interplay with the other design choices 
+                  required to build an imitation learning algorithm. We show that CFM gives the 
+                  best performance when combined with point cloud input observations. 
+                  Additionally, we study the feasibility of a CFM formulation on the SO(3) 
+                  manifold and evaluate its suitability with a simplified example. We perform 
+                  extensive experiments on RLBench which demonstrate that our proposed PointFlowMatch 
+                  approach achieves a state-of-the-art average success rate of 67.8% over eight tasks, 
+                  double the performance of the next best method. We make the code and trained models 
+                  publicly available at http://pointflowmatch.cs.uni-freiburg.de/.
+                </p>
+                <!-- Youtube Video -->
+                <p class="card-text">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/6pAnyWb36Xk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+                <!-- Short Video -->
+                <!-- <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <video width="75%" class="marginauto" controls>
+                    <source src="img/project-orca/online_cut.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> 
+                </div> -->
+                <!-- Image Carousel -->
+                <!-- <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/project-centergrasp/centergrasp.gif" alt="Objects and predicted grasps">
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Links -->
+                <a href="https://arxiv.org/pdf/2409.07343" target="_blank" class="btn btn-primary"><i
+                    class="fa fa-file-pdf-o"></i>CoRL 2024 paper</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- CenterGrasp paper -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Manipulation &nbsp; | &nbsp; 6-DoF Grasp Prediction &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CenterGrasp: Object-Aware Implicit Representation Learning for Simultaneous Shape Reconstruction and 6-DoF Grasp Estimation</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Robot Learning Lab, University of Freiburg</h6>
+                <p class="card-text">
+                  Reliable object grasping is a crucial capability for autonomous robots. However, 
+                  many existing grasping approaches focus on general clutter removal without explicitly 
+                  modeling objects and thus only relying on the visible local geometry. We introduce 
+                  CenterGrasp, a novel framework that combines object awareness and holistic grasping. 
+                  CenterGrasp learns a general object prior by encoding shapes and valid grasps in a 
+                  continuous latent space. It consists of an RGB-D image encoder that leverages recent 
+                  advances to detect objects and infer their pose and latent code, and a decoder to 
+                  predict shape and grasps for each object in the scene. We perform extensive experiments 
+                  on simulated as well as real-world cluttered scenes and demonstrate strong scene 
+                  reconstruction and 6-DoF grasp-pose estimation performance. Compared to the state of 
+                  the art, CenterGrasp achieves an improvement of 38.5 mm in shape reconstruction and 
+                  33 percentage points on average in grasp success. We make the code and trained models 
+                  publicly available at http://centergrasp.cs.uni-freiburg.de.
+                </p>
+                <!-- Youtube Video -->
+                <p class="card-text">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/j9EXZ0KdA4I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+                <!-- Short Video -->
+                <!-- <div id="carousel-centergrasp" class="carousel slide" data-ride="carousel">
+                  <video width="75%" class="marginauto" controls>
+                    <source src="img/project-orca/online_cut.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> 
+                </div> -->
+                <!-- Image Carousel -->
+                <div id="carousel-centergrasp" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/project-centergrasp/centergrasp.gif" alt="Objects and predicted grasps">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://arxiv.org/pdf/2312.08240" target="_blank" class="btn btn-primary"><i
+                    class="fa fa-file-pdf-o"></i>RA-L 2024 paper</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
 
           <!-- CEILing paper -->
           <div class="project-container">
@@ -316,7 +430,7 @@
 
 
           <!-- Human motion prediction -->
-          <div class="project-container">
+          <!-- <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
                 Human motion prediction &nbsp; | &nbsp; Deep Learning &nbsp; | &nbsp; Tensorflow
@@ -332,9 +446,9 @@
                   multi-steps predictions. To enforce continuity between prediction steps, I adopted a residual
                   architecture. The model
                   was able to perform beyond the hard baseline.
-                </p>
+                </p> -->
                 <!-- Image Carousel -->
-                <div id="carousel-3" class="carousel slide" data-ride="carousel">
+                <!-- <div id="carousel-3" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img class="d-block w-75 marginauto" src="img/project-motion_prediction/architecture.png" alt="">
@@ -351,18 +465,18 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
-                </div>
+                </div> -->
                 <!-- Links -->
-                <a href="https://drive.google.com/open?id=1-mrjzR2v0vwBHnH8Y3s334nX_9jnHCYt" target="_blank"
+                <!-- <a href="https://drive.google.com/open?id=1-mrjzR2v0vwBHnH8Y3s334nX_9jnHCYt" target="_blank"
                   class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>REPORT</a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Project End  -->
 
 
           <!-- Bachelor Thesis -->
-          <div class="project-container">
+          <!-- <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
                 Energy Management Systems &nbsp; | &nbsp; Formula 1 Power Unit &nbsp; | &nbsp; Control System
@@ -376,9 +490,9 @@
                   To take the non-smooth structure of the problem explicitly into account, I adapted the optimal
                   control policy in real-time with simple PID controllers leveraging Pontryagin’s minimum principle.
                   The performance of the presented approach was better compared to the performance of a previously
-                  developed optimality tracking MPC scheme.</p>
+                  developed optimality tracking MPC scheme.</p> -->
                 <!-- Image Carousel -->
-                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                <!-- <div id="carousel-1" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img class="d-block w-75 marginauto" src="img/project-f1/power_unit.png" alt="">
@@ -395,13 +509,13 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
-                </div>
+                </div> -->
                 <!-- Links -->
-                <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/327346/1/EquivalentLapTimeMinimizationStrategiesforaHybridElectricRaceCar.pdf"
+                <!-- <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/327346/1/EquivalentLapTimeMinimizationStrategiesforaHybridElectricRaceCar.pdf"
                   target="_blank" class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>CDC 2018 Paper</a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Project End  -->
 
 
@@ -416,7 +530,10 @@
         <div class="col-lg-8 mx-auto">
           <h2>Publications</h2>
 
-          <h4>Journal</h4>
+          For a complete list of publications, please refer to my 
+          <a href="https://scholar.google.com/citations?user=cKvbzWsAAAAJ" target="_blank"> google scholar profile</a>.
+
+          <!-- <h4>Journal</h4>
           <p class="lead">
           <ol>
             <li>
@@ -457,7 +574,7 @@
                 Control (CDC)</i>, Miami Beach, FL, USA, 2018
             </li>
           </ol>
-          </p>
+          </p> -->
           <p>
             <br>
           </p>
