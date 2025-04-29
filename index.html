@@ -70,7 +70,7 @@
         <img src="img/amz_cropped.jpg" class="img-round" />
       </div>
       <h1 class="title-name">EUGENIO CHISARI</h1>
-      <p class="title-description">Robotics &nbsp; | &nbsp; Mobile Manipulation &nbsp; | &nbsp; Imitation Learning &nbsp; | &nbsp; Autonomous Vehicles &nbsp;</p>
+      <p class="title-description">Robotics &nbsp; | &nbsp; Manipulation &nbsp; | &nbsp; Imitation Learning &nbsp; | &nbsp; Autonomous Vehicles &nbsp;</p>
       <a href="mailto:eugenio.chisari@gmail.com" target="_blank" class="fa fa-envelope"></a>
       <a href="https://twitter.com/ChisariEugenio" target="_blank" class="fa fa-twitter"></a>
       <a href="https://scholar.google.com/citations?user=cKvbzWsAAAAJ" target="_blank"
@@ -88,11 +88,11 @@
             Hi there, this is Eugenio! I am a PhD candidate at the University of Freiburg
             under the supervision of Prof. Abhinav Valada and Wolfram Burgard. My research is
             focused on Robot Learning, in particular Imitation and Reinforcement Learning
-            for mobile manipulation. In the past I contributed to different ambitious
+            for manipulation. In the past I contributed to different ambitious
             research and engineering projects and gathered firsthand experience in
             classical and optimal control systems and motion planning.
             In particular, I worked as Trajectory and Vehicle Dynamics Control Engineer
-            at <a href="http://driverless.amzracing.ch/" target=_blank>AMZ Driverless</a>, ETH's
+            at <a href="https://driverless.amzracing.ch/" target=_blank>AMZ Driverless</a>, ETH's
             Formula Student Driverless team, and interned at
             <a href="https://www.anybotics.com/" target=_blank>ANYbotics AG</a> as
             Robotics Software Engineer in the autonomous navigation team.
@@ -114,6 +114,67 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Selected Projects</h2>
+
+          <!-- AmbRes paper -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                VLMs &nbsp; | &nbsp; Manipulation &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Robotic Task Ambiguity Resolution via Natural Language Interaction</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Robot Learning Lab, University of Freiburg</h6>
+                <p class="card-text">
+                  Language-conditioned robotic policies allow users
+                  to specify tasks using natural language. While much research
+                  has focused on improving the action prediction of language-
+                  conditioned policies, reasoning about task descriptions has
+                  been largely overlooked. Ambiguous task descriptions often
+                  lead to downstream policy failures due to misinterpretation
+                  by the robotic agent. To address this challenge, we introduce
+                  AmbResVLM, a novel method that grounds language goals in the
+                  observed scene and explicitly reasons about task ambiguity. We
+                  extensively evaluate its effectiveness in both simulated and real-
+                  world domains, demonstrating superior task ambiguity detection
+                  and resolution compared to recent state-of-the-art methods.
+                  Finally, real robot experiments show that our model improves
+                  the performance of downstream robot policies, increasing the
+                  average success rate from 69.6% to 97.1%. We make the
+                  data, code, and trained models publicly available at 
+                  <a href="https://ambres.cs.uni-freiburg.de" target="_blank">https://ambres.cs.uni-freiburg.de</a>.
+                </p>
+                
+                <!-- Youtube Video -->
+                <!-- <p class="card-text">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/6pAnyWb36Xk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p> -->
+                <!-- Short Video -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <video width="100%" class="marginauto" controls poster="img/project-ambres/thumbnail.png">
+                    <source src="img/project-ambres/AmbRes_supplementary_compressed.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                  </video> 
+                </div>
+                <!-- Image Carousel -->
+                <!-- <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/project-centergrasp/centergrasp.gif" alt="Objects and predicted grasps">
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Links -->
+                <a href="https://arxiv.org/pdf/2504.17748" target="_blank" class="btn btn-primary"><i
+                    class="fa fa-file-pdf-o"></i>Arxiv preprint</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
 
           <!-- PointFlowMatch paper -->
           <div class="project-container">
@@ -141,7 +202,8 @@
                   extensive experiments on RLBench which demonstrate that our proposed PointFlowMatch 
                   approach achieves a state-of-the-art average success rate of 67.8% over eight tasks, 
                   double the performance of the next best method. We make the code and trained models 
-                  publicly available at http://pointflowmatch.cs.uni-freiburg.de/.
+                  publicly available at 
+                  <a href="https://pointflowmatch.cs.uni-freiburg.de" target="_blank">https://pointflowmatch.cs.uni-freiburg.de</a>.
                 </p>
                 <!-- Youtube Video -->
                 <p class="card-text">
@@ -197,7 +259,8 @@
                   reconstruction and 6-DoF grasp-pose estimation performance. Compared to the state of 
                   the art, CenterGrasp achieves an improvement of 38.5 mm in shape reconstruction and 
                   33 percentage points on average in grasp success. We make the code and trained models 
-                  publicly available at http://centergrasp.cs.uni-freiburg.de.
+                  publicly available at 
+                  <a href="https://centergrasp.cs.uni-freiburg.de" target="_blank">https://centergrasp.cs.uni-freiburg.de</a>.
                 </p>
                 <!-- Youtube Video -->
                 <p class="card-text">
