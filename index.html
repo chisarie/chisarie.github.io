@@ -85,27 +85,31 @@
         <div class="col-lg-8 mx-auto">
           <h2>About</h2>
           <p class="lead">
-            Hi there, this is Eugenio! I work on advancing robot learning and foundation models for manipulation. 
-            Currently, I am a Research Engineer at <a href="https://flexion.ai/" target=_blank>Flexion Robotics</a>, 
-            where I had the unique opportunity to build 
-            our manipulation efforts from the ground up as the team's first hire.
-            Before Flexion, I earned a PhD at the University of Freiburg, Germany, under the supervision 
-            of Prof. Abhinav Valada and Prof. Wolfram Burgard. My research focused on 
-            Imitation and Interactive Learning for robotic manipulation. 
+            Hi there, this is Eugenio! I work on advancing robot learning and foundation models for manipulation.
+            Currently, I am a Research Engineer at <a href="https://www.mimicrobotics.com/" target=_blank>Mimic Robotics</a>,
+            where I work on Video-Action Models and general-purpose dexterous manipulation.
+            Previously, I was a Research Engineer at <a href="https://flexion.ai/" target=_blank>Flexion Robotics</a>,
+            where I had the unique opportunity to build
+            the manipulation efforts from the ground up as the team's first hire.
+            Before Flexion, I earned a PhD at the University of Freiburg, Germany, under the supervision
+            of Prof. Abhinav Valada and Prof. Wolfram Burgard. My research focused on
+            Imitation and Interactive Learning for robotic manipulation.
             Before my PhD, I contributed to ambitious engineering projects.
             In particular, I worked as Trajectory and Vehicle Dynamics Control Engineer
             at <a href="https://driverless.amzracing.ch/" target=_blank>AMZ Driverless</a>, ETH's
             Formula Student Driverless team, and interned at
             <a href="https://www.anybotics.com/" target=_blank>ANYbotics AG</a> as
             Robotics Software Engineer in the autonomous navigation team.
-            I am also interested in the world of startups and product. In summer 2023, 
-            I had the fortune to work at 
+            I am also interested in the world of startups and product. In summer 2023,
+            I had the fortune to work at
             <a href="https://www.google.com/about/careers/applications/programs/apm/" target=_blank>Google as APM intern</a>.
           </p>
+          <!-- Hidden until the CV is updated
           <div class="resume">
             <a href="pdf/CV_Eugenio_Chisari.pdf" target="_blank" class="btn btn-primary"><i
                 class="fa fa-file-pdf-o"></i>CV / Resume</a>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -116,6 +120,82 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Selected Projects</h2>
+
+          <!-- FLUX-mimic -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Video-Action Models &nbsp; | &nbsp; Dexterous Manipulation &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">FLUX-mimic: A Video-Action Model for General-Purpose Dexterity</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Mimic Robotics</h6>
+                <p class="card-text">
+                  FLUX-mimic is a next-generation Video-Action Model for general-purpose robot
+                  action generation, developed in collaboration with Black Forest Labs and built
+                  on top of FLUX 3, their frontier multimodal image, video, and audio generation model.
+                  Video-Action Models combine video and world modeling with robotic action prediction,
+                  leveraging visual, semantic, behavioral, and physical priors from large-scale video
+                  generation. Compared to traditional Vision-Language-Action models, this recipe
+                  reaches as much as 10x higher data efficiency.
+                  A preview of FLUX-mimic achieves 95% success on a real-robot soft-body kitting
+                  task with no single-task fine-tuning, runs locally on a single NVIDIA RTX 5090,
+                  and is already being tested and deployed with manufacturing partners such as Audi.
+                </p>
+                <!-- Youtube Video -->
+                <p class="card-text">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/oWIro-LOiGI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+                <!-- Links -->
+                <a href="https://www.mimicrobotics.com/blog/introducing-flux-mimic" target="_blank" class="btn btn-primary">Blog post</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- Flexion Reflect v0 -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Humanoids &nbsp; | &nbsp; Foundation Models &nbsp; | &nbsp; Manipulation &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Flexion Reflect v0: Towards Generalizable Robot Autonomy</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Flexion Robotics</h6>
+                <p class="card-text">
+                  Training robots with data collected manually for every possible scenario does not
+                  scale to the richness of the real world. Flexion Reflect v0 instead gives a humanoid
+                  access to a toolbox of reusable skills, each trained for reliability, and orchestrates
+                  them with foundation models that understand the world.
+                  The autonomy stack combines an LLM/VLM agent for task scheduling and common sense,
+                  a general motion generator for short-horizon collision-aware trajectories, and an
+                  RL-based whole-body tracker for robust execution across terrains.
+                  We demonstrate this modular stack on a long-horizon tidy-up task: detecting
+                  previously unseen objects, navigating uneven terrain, grasping, and placing items
+                  into a basket, with no hardcoded state machine or teleoperation.
+                </p>
+                <!-- Youtube Video -->
+                <p class="card-text">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/g3SrYFRHcAo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+                <!-- Links -->
+                <a href="https://flexion.ai/news/flexion-reflect-v0-towards-generalizable-robot-autonomy" target="_blank" class="btn btn-primary">Blog post</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
 
           <!-- AmbRes paper -->
           <div class="project-container">
@@ -151,7 +231,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/6pAnyWb36Xk"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
                 </div>
                 </p> -->
@@ -212,7 +293,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/6pAnyWb36Xk"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
                 </div>
                 </p>
@@ -269,7 +351,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/j9EXZ0KdA4I"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
                 </div>
                 </p>
@@ -324,7 +407,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/jodKpk01HDE"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
                 </div>
                 </p>
@@ -406,7 +490,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/kFfMqCnCVYk"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
                 </div>
                 </p>
@@ -460,6 +545,9 @@
                 <p class="card-text">
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hYpToBIMpVQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
                 </div>
                 </p>
